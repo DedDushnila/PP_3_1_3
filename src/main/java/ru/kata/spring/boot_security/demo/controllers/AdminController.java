@@ -63,6 +63,19 @@ public class AdminController {
         return "redirect:/admin";
     }
 
+//    @PostMapping("/updateUser/{id}")
+//    public String updateUser(@PathVariable Long id,
+//                             @ModelAttribute User updatedUser,
+//                             @RequestParam(value = "roles", required = false) List<Long> roleIds) {
+//
+//        if (roleIds == null || roleIds.isEmpty()) {
+//            roleIds =
+//        }
+//
+//        userService.updateUser(id, updatedUser, roleIds);
+//        return "redirect:/admin";
+//    }
+
 
     @PostMapping("/deleteUser/{id}")
     public String deleteUser(@PathVariable Long id) {

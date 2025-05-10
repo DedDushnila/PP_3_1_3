@@ -207,7 +207,7 @@
                                                                     <option th:each="role : ${roles}"
                                                                             th:value="${role.id}"
                                                                             th:text="${role.name}"
-                                                                            th:selected="${user.roles.contains(r)}"
+                                                                            th:selected="${user.roles.contains(role)}"
                                                                     ></option>
                                                                 </select>
                                                             </div>
